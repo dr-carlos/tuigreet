@@ -75,7 +75,7 @@ pub fn get_issue() -> Option<String> {
     .unwrap_or(0);
 
   let user_string = match user_count {
-    n if n < 2 => format!("{n} user"),
+    n if n == 1 => format!("{n} user"),
     n => format!("{n} users"),
   };
 
